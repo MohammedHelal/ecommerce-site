@@ -30,7 +30,7 @@ function Filter({ changeUrl, changeName, rating }) {
         <Media
           queries={{
             small: "(max-width: 720px)",
-            large: "(min-width: 720px)",
+            large: "(min-width: 721px)",
           }}
         >
           {(matches) => (
