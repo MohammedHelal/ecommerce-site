@@ -1,7 +1,6 @@
 @font-face {
   font-family: Heaters;
   src: url("./font/Heaters.otf") format("opentype");
-  font-size: larger;
 }
 
 #navbar {
@@ -9,6 +8,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: crimson;
+  font-size: large;
 }
 
 #logo {
@@ -17,21 +17,20 @@
   font-size: xx-large;
 }
 
-#logo h3{
+#logo h3 {
   margin: 8.5px 0;
-  color:darkred
+  color: white;
 }
 
-.rightNav{
+.rightNav {
   display: flex;
 }
 .navbtn {
   padding: 19px;
-  border : 0;
+  border: 0;
   text-decoration: none;
-  font-size: large;
-  color:antiquewhite;
   background-color: crimson;
+  color: white;
 }
 
 .navbtn:hover {
@@ -40,24 +39,26 @@
 }
 
 /* The dropdown container */
-.dropdown, .cart {
+.dropdown,
+.cart {
   overflow: hidden;
 }
 
 /* Dropdown button */
-.dropdown .dropbtn, .cart button {
-  font-size: larger;
+.dropdown .dropbtn,
+.cart button {
   border: none;
   outline: none;
-  color:antiquewhite;
   padding: 20px;
   background-color: inherit;
+  color: white;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
 /* Add a red background color to navbar links on hover */
-.dropdown:hover .dropbtn, .cart button:hover {
+.dropdown:hover .dropbtn,
+.cart button:hover {
   background-color: darkred;
   cursor: pointer;
 }
@@ -68,13 +69,12 @@
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
-.dropdown-content a button{
+.dropdown-content a button {
   width: 100%;
-  font-size: medium;
   padding: 10px;
 }
 
@@ -83,9 +83,13 @@
   display: block;
 }
 
-.cart{
-  padding-right: 5vw;
+.cart {
+  padding-right: 10px;
+  margin: 0;
 }
-.cart button{
-  width: 120px;
+
+@media only screen and (max-width: 768px) {
+  #logo {
+    font-size: larger;
+  }
 }
