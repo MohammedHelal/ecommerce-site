@@ -1,111 +1,122 @@
-.item{
-    display: grid;
-    grid-template-columns: 49% 49%;
-    grid-template-rows: 10% 90%;
-    gap: 2%;
-    Margin: 10px auto;
-    width: 90vw;
-    height: 88vh;
-    background-color: white;
-    font-family: monospace;
+.item {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-template-rows: 10% 90%;
+  gap: 2%;
+  margin: 10px auto;
+  width: 90vw;
+  height: 88vh;
+  background-color: white;
+  font-family: monospace;
 }
 
-
-
-.itemImg, .details{
-    padding: 10px;
-    height: 100%;
+.itemImg,
+.details {
+  padding: 10px;
+  height: 100%;
 }
 
-.itemImg img{
-    width: 100%;
-    height: 72vh;
-    object-fit: contain;
+.itemImg img {
+  width: 100%;
+  height: 72vh;
+  object-fit: contain;
 }
 
 .details {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.ratings{
-    display: flex;
-    flex-direction: row;
+.ratings {
+  display: flex;
+  flex-direction: row;
 }
 
-.box{
-    border-right: 1px solid crimson;
-    padding: 10px 40px;
-    height: 50px;
-    font-size: large;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.box {
+  border-right: 1px solid crimson;
+  padding: 10px 40px;
+  height: 50px;
+  font-size: large;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.itemPrice{
-    width: 100%;
-    background-color: lightcoral;
-    color: white;
-    font-size: x-large;
-    
+.itemPrice {
+  width: 100%;
+  background-color: lightcoral;
+  color: white;
+  font-size: x-large;
 }
 
-.itemPrice h3{
-    padding: 10px;
+.itemPrice h3 {
+  padding: 10px;
 }
 
 p {
-    font-size: large;
+  font-size: large;
 }
 
 .buyBtn {
-    padding: 10px 0;
-    margin: 10px 0;
-    display: flex;
+  padding: 10px 0;
+  margin: 10px 0;
+  display: flex;
 }
 
-.buyBtn button{
-    padding: 20px;
-    color: white;
-    background-color: crimson;
-    margin: 0 10px;
-    border: 0;
-    border-radius: 5px;
+.buyBtn button {
+  padding: 20px;
+  color: white;
+  background-color: crimson;
+  margin: 0 10px;
+  border: 0;
+  border-radius: 5px;
 }
 
-.itemBtn{
-    width: 150px;
-    height: 70px;
+.itemBtn {
+  width: 150px;
+  height: 70px;
 }
 
-.buyBtn button:hover{
-    cursor: pointer;
-    background-color: darkred;
+.buyBtn button:hover {
+  cursor: pointer;
+  background-color: darkred;
 }
 
-#space{
-    padding: 20px;
+#space {
+  padding: 20px;
 }
 
 @media only screen and (max-width: 1025px) {
-    .box {
-        padding: 10px 20px;
-        font-size: medium;
-    }
-    
-    .description p {
-        font-size: small;
-    }
+  .box {
+    padding: 10px 20px;
+    font-size: medium;
+  }
+
+  .description p {
+    font-size: small;
+  }
 }
 
 @media only screen and (max-width: 950px) {
-    .description p {
-        font-size: small;
-    }
+  .description p {
+    font-size: small;
+  }
 
-    #space{
-        padding: 0;
-    }
+  #space {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    background-color: lightgrey;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    height: 100%;
+  }
 }
